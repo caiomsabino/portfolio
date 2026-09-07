@@ -6,10 +6,19 @@ import "./globals.css";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
+const title = "Caio Sabino — Desenvolvedor Backend e Automação";
+const description =
+  "Estudante de Engenharia de Software na UnB. Backend em Java, Spring Boot e NestJS, com uma aplicação própria em produção para cliente real.";
+
 export const metadata: Metadata = {
-  title: "Caio Sabino — Desenvolvedor Backend e Automação",
-  description:
-    "Estudante de Engenharia de Software na UnB. Backend em Java, Spring Boot e NestJS, com uma aplicação própria em produção para cliente real.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    locale: "pt_BR",
+  },
 };
 
 export default function RootLayout({
