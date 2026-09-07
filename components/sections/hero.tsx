@@ -1,7 +1,8 @@
 "use client";
 
-import { ArrowDown, Code, Download, ExternalLink } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { GithubIcon, LinkedinIcon } from "@/components/brand-icons";
 import { SITE_LINKS } from "@/content/links";
 import { useContent } from "@/lib/language-context";
 
@@ -35,7 +36,7 @@ export function Hero() {
               rel="noopener noreferrer"
               aria-label={`${contact.githubLabel} — Caio Sabino`}
             >
-              <Code className="h-5 w-5" />
+              <GithubIcon className="h-5 w-5" />
             </a>
           </Button>
           <Button asChild variant="ghost" size="icon">
@@ -45,7 +46,7 @@ export function Hero() {
               rel="noopener noreferrer"
               aria-label={`${contact.linkedinLabel} — Caio Sabino`}
             >
-              <ExternalLink className="h-5 w-5" />
+              <LinkedinIcon className="h-5 w-5" />
             </a>
           </Button>
         </div>
