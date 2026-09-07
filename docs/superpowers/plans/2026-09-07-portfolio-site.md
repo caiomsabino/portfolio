@@ -109,8 +109,11 @@ Expected: the PDF still exists, the spec still exists, the first commit is still
 
 ```bash
 npx shadcn@latest init -d --base radix
-npx shadcn@latest add button card badge separator tooltip
+npx shadcn@latest add button card badge separator
 ```
+
+Tooltip is deliberately **not** installed: no section in this plan uses one, and
+an unused component is dead code. Add it later if a real need appears.
 
 - [ ] **Step 6: Fix the font hazard in `app/globals.css`**
 
@@ -1497,7 +1500,7 @@ Nothing new is built here. This task is the honest check that the page works as 
 
 - [ ] **Step 1: Add `scroll-behavior` and header offset**
 
-Anchor links currently jump under the sticky header. In `app/globals.css`, add to the `html` rule:
+Anchor links currently jump under the sticky header. In `app/globals.css`, add these to the `html` rule — if the scaffold generated no `html` rule, create one:
 
 ```css
 html {
