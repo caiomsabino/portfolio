@@ -22,6 +22,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
+    // Reading localStorage during render would desync server and client HTML, so this must run in an effect.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (stored === "pt" || stored === "en") setLanguageState(stored);
   }, []);
 
