@@ -132,6 +132,10 @@ export const pt: SiteContent = {
           "Google Apps Script",
         ],
       },
+      {
+        label: "Metodologias",
+        items: ["Scrum", "Kanban", "XP", "Engenharia de Requisitos"],
+      },
     ],
     languagesLabel: "Idiomas",
     languages: "Português nativo · Inglês fluente · Espanhol intermediário · Francês básico",
