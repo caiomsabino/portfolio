@@ -55,6 +55,19 @@ export const pt: SiteContent = {
         ],
       },
       {
+        organization: "ITRAC (UnB)",
+        role: "Pesquisador",
+        dates: "05/2025 — 01/2026",
+        location: "Brasília, DF",
+        bullets: [
+          "Apoiei a centralização de serviços governamentais no âmbito do ColaboraGov, aplicando metodologia de Design de Serviços para diagnóstico e estruturação de serviços compartilhados entre órgãos públicos.",
+          "Conduzi mapeamentos de processos (AS-IS/TO-BE) para identificar gargalos e oportunidades de melhoria na prestação de serviços ao cidadão.",
+          "Facilitei workshops com órgãos públicos, mobilizando stakeholders institucionais para alinhamento e co-construção de soluções.",
+          "Produzi pesquisa científica sobre acessibilidade em sites governamentais, com elaboração de artigo técnico-acadêmico, desenvolvendo análise crítica, revisão de literatura e escrita científica aplicada ao contexto do setor público.",
+          "Apliquei metodologias ágeis e técnicas de análise de requisitos para estruturar visualmente problemas complexos em ambiente de laboratório de inovação.",
+        ],
+      },
+      {
         organization: "Universidade de Brasília (UnB)",
         role: "Bacharelado em Engenharia de Software",
         dates: "03/2023 — 12/2027",

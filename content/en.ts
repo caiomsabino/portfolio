@@ -55,6 +55,19 @@ export const en: SiteContent = {
         ],
       },
       {
+        organization: "ITRAC (UnB)",
+        role: "Researcher",
+        dates: "05/2025 — 01/2026",
+        location: "Brasília, DF",
+        bullets: [
+          "I supported the centralization of government services under ColaboraGov, applying Service Design methodology to diagnose and structure services shared across public agencies.",
+          "I ran AS-IS/TO-BE process mapping to identify bottlenecks and opportunities to improve service delivery to citizens.",
+          "I facilitated workshops with public agencies, bringing institutional stakeholders together to align on and co-create solutions.",
+          "I produced scientific research on accessibility in government websites, writing a technical-academic paper and developing critical analysis, literature review and scientific writing applied to the public sector.",
+          "I applied agile methodologies and requirements-analysis techniques to visually structure complex problems in an innovation lab.",
+        ],
+      },
+      {
         organization: "University of Brasília (UnB)",
         role: "BSc in Software Engineering",
         dates: "03/2023 — 12/2027",
