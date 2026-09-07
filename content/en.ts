@@ -23,7 +23,7 @@ export const en: SiteContent = {
     heading: "Backend, data and automation",
     paragraphs: [
       "I study Software Engineering at the University of Brasília, graduating in December 2027, and I am looking for a software development internship.",
-      "My work centers on the backend: REST APIs in Java and Spring Boot, services in NestJS, business rules in Ruby, and data modelling in PostgreSQL. I cover the critical rules with automated tests and use Docker to keep the environment consistent across the team.",
+      "My work centers on the backend: REST APIs in Java and Spring Boot, services in NestJS, business rules in Ruby, and data modeling in PostgreSQL. I cover the critical rules with automated tests and use Docker to keep the environment consistent across the team.",
       "Beyond the code, I like automating whatever is repetitive — these days with AI tooling and Google Apps Script, taking manual work out of my team's routine.",
     ],
   },
@@ -39,7 +39,7 @@ export const en: SiteContent = {
         bullets: [
           "I develop business rules in Ruby that define client-portal functionality, translating requirements from the business side into application logic.",
           "I write and optimize SQL queries in PostgreSQL for exploratory analysis, surfacing patterns that guide the team's operational decisions.",
-          "I investigate incidents by analysing REST API logs and JSON payloads, isolating root causes of production failures.",
+          "I investigate incidents by analyzing REST API logs and JSON payloads, isolating root causes of production failures.",
           "I built automations with Google Apps Script and Claude Cowork that are now part of the team's routine.",
         ],
       },
