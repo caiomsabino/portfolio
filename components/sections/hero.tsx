@@ -10,9 +10,15 @@ export function Hero() {
   const { hero, contact } = useContent();
 
   return (
-    <section className="flex flex-col justify-center gap-6 py-24 sm:py-32">
+    <section
+      id="hero"
+      aria-labelledby="hero-heading"
+      className="flex flex-col justify-center gap-6 py-24 sm:py-32"
+    >
       <p className="font-mono text-sm text-primary">{hero.role}</p>
-      <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">{hero.name}</h1>
+      <h1 id="hero-heading" className="text-4xl font-semibold tracking-tight sm:text-5xl">
+        {hero.name}
+      </h1>
       <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">{hero.pitch}</p>
 
       <div className="flex flex-wrap items-center gap-3 pt-2">
