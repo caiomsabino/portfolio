@@ -1,0 +1,61 @@
+"use client";
+
+import { useContent, useLanguage, type Language } from "@/lib/language-context";
+import { cn } from "@/lib/utils";
+
+const LANGUAGES: Language[] = ["pt", "en"];
+
+export function SiteHeader() {
+  const content = useContent();
+  const { language, setLanguage } = useLanguage();
+
+  const links = [
+    { href: "#about", label: content.nav.about },
+    { href: "#experience", label: content.nav.experience },
+    { href: "#projects", label: content.nav.projects },
+    { href: "#skills", label: content.nav.skills },
+    { href: "#contact", label: content.nav.contact },
+  ];
+
+  return (
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur">
+      <div className="mx-auto flex max-w-4xl items-center justify-between gap-4 px-6 py-4">
+        <a href="#top" className="font-mono text-sm font-medium text-foreground">
+          caio<span className="text-primary">.</span>sabino
+        </a>
+
+        <nav aria-label={content.nav.menuLabel} className="hidden gap-6 md:flex">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex items-center rounded-md border border-border p-0.5">
+          {LANGUAGES.map((option) => (
+            <button
+              key={option}
+              type="button"
+              onClick={() => setLanguage(option)}
+              aria-pressed={language === option}
+              className={cn(
+                "rounded-sm px-2.5 py-1 font-mono text-xs uppercase transition-colors",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                language === option
+                  ? "bg-primary text-primary-foreground"
+                  : "text-muted-foreground hover:text-foreground",
+              )}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
+      </div>
+    </header>
+  );
+}
