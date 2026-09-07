@@ -28,7 +28,7 @@ export function Projects() {
               />
               <CardHeader className="gap-1">
                 <span className="font-mono text-xs text-muted-foreground">{project.dates}</span>
-                <CardTitle className="text-base leading-snug">{project.name}</CardTitle>
+                <CardTitle role="heading" aria-level={3} className="text-base leading-snug">{project.name}</CardTitle>
                 <p className="text-sm text-primary">{project.tagline}</p>
               </CardHeader>
               <CardContent className="flex flex-1 flex-col gap-4">
