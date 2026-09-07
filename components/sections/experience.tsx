@@ -16,7 +16,7 @@ export function Experience() {
           {experience.heading}
         </h2>
 
-        <ol className="flex flex-col gap-10 pt-6">
+        <ol className="flex flex-col gap-10 pt-6" role="list">
           {experience.entries.map((entry) => (
             <li
               key={`${entry.organization}-${entry.dates}`}
