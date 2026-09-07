@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# build/process artifacts kept locally, not published
+docs/superpowers/
+AGENTS.md
+CLAUDE.md
