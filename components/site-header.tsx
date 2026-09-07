@@ -1,5 +1,8 @@
 "use client";
 
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { SITE_LINKS } from "@/content/links";
 import { useContent, useLanguage, type Language } from "@/lib/language-context";
 import { cn } from "@/lib/utils";
 
@@ -36,24 +39,33 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="flex items-center rounded-md border border-border p-0.5">
-          {LANGUAGES.map((option) => (
-            <button
-              key={option}
-              type="button"
-              onClick={() => setLanguage(option)}
-              aria-pressed={language === option}
-              className={cn(
-                "rounded-sm px-2.5 py-1 font-mono text-xs uppercase transition-colors",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                language === option
-                  ? "bg-primary text-primary-foreground"
-                  : "text-muted-foreground hover:text-foreground",
-              )}
-            >
-              {option}
-            </button>
-          ))}
+        <div className="flex items-center gap-2">
+          <Button asChild variant="ghost" size="sm">
+            <a href={SITE_LINKS.resume} download>
+              <Download className="size-4" />
+              <span className="hidden sm:inline">{content.contact.resumeLabel}</span>
+            </a>
+          </Button>
+
+          <div className="flex items-center rounded-md border border-border p-0.5">
+            {LANGUAGES.map((option) => (
+              <button
+                key={option}
+                type="button"
+                onClick={() => setLanguage(option)}
+                aria-pressed={language === option}
+                className={cn(
+                  "rounded-sm px-2.5 py-1 font-mono text-xs uppercase transition-colors",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                  language === option
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </header>
