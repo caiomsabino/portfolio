@@ -36,7 +36,7 @@ export function Hero() {
               rel="noopener noreferrer"
               aria-label={`${contact.githubLabel} — Caio Sabino`}
             >
-              <GithubIcon className="h-5 w-5" />
+              <GithubIcon className="size-5" />
             </a>
           </Button>
           <Button asChild variant="ghost" size="icon">
@@ -46,7 +46,7 @@ export function Hero() {
               rel="noopener noreferrer"
               aria-label={`${contact.linkedinLabel} — Caio Sabino`}
             >
-              <LinkedinIcon className="h-5 w-5" />
+              <LinkedinIcon className="size-5" />
             </a>
           </Button>
         </div>
