@@ -36,6 +36,12 @@ export interface SiteContent {
     pitch: string;
     ctaProjects: string;
     ctaResume: string;
+    trace: {
+      request: string;
+      status: string;
+      caption: string;
+      steps: string[];
+    };
   };
   about: {
     label: string;

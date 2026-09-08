@@ -17,6 +17,12 @@ export const en: SiteContent = {
       "Software Engineering student at UnB. I work on the backend in Java, Spring Boot, NestJS and Ruby. I maintain a platform in production that a karate school uses every day.",
     ctaProjects: "View projects",
     ctaResume: "Download CV",
+    trace: {
+      request: "GET /api/students",
+      status: "200 OK",
+      caption: "The path I build, from request to database.",
+      steps: ["authentication", "business rules", "PostgreSQL query", "JSON response"],
+    },
   },
   about: {
     label: "About",
@@ -157,7 +163,7 @@ export const en: SiteContent = {
     label: "Contact",
     heading: "Let's talk",
     blurb:
-      "I am looking for a software development internship. If my experience fits what your team needs, get in touch.",
+      "Open to conversations about backend, data and automation, and to good problems worth solving.",
     emailLabel: "Email",
     githubLabel: "GitHub",
     linkedinLabel: "LinkedIn",

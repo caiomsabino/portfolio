@@ -3,6 +3,7 @@
 import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GithubIcon, LinkedinIcon } from "@/components/brand-icons";
+import { RequestTrace } from "@/components/request-trace";
 import { SITE_LINKS } from "@/content/links";
 import { useContent } from "@/lib/language-context";
 
@@ -13,15 +14,22 @@ export function Hero() {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="flex flex-col justify-center gap-6 py-24 sm:py-32"
+      className="grid items-center gap-10 pb-14 pt-16 sm:pb-16 sm:pt-20 lg:grid-cols-[1.05fr_1fr] lg:gap-14"
     >
-      <p className="font-mono text-sm text-primary">{hero.role}</p>
-      <h1 id="hero-heading" className="text-4xl font-semibold tracking-tight sm:text-5xl">
-        {hero.name}
-      </h1>
-      <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">{hero.pitch}</p>
+      <div className="flex flex-col gap-6">
+        <p className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">
+          <span aria-hidden="true" className="size-1.5 rounded-full bg-primary" />
+          {hero.role}
+        </p>
+        <h1
+          id="hero-heading"
+          className="text-5xl font-semibold leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl"
+        >
+          {hero.name}
+        </h1>
+        <p className="max-w-xl text-base leading-relaxed text-muted-foreground">{hero.pitch}</p>
 
-      <div className="flex flex-wrap items-center gap-3 pt-2">
+        <div className="flex flex-wrap items-center gap-3 pt-2">
         <Button asChild>
           <a href="#projects">
             {hero.ctaProjects}
@@ -55,8 +63,11 @@ export function Hero() {
               <LinkedinIcon className="size-5" />
             </a>
           </Button>
+          </div>
         </div>
       </div>
+
+      <RequestTrace />
     </section>
   );
 }

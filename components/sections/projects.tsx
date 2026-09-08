@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ProjectMark } from "@/components/project-mark";
 import { useContent } from "@/lib/language-context";
 
 export function Projects() {
@@ -20,12 +21,15 @@ export function Projects() {
         </h2>
 
         <div className="grid gap-6 pt-6 md:grid-cols-2">
-          {projects.entries.map((project) => (
+          {projects.entries.map((project, i) => (
             <Card key={project.name} className="flex flex-col overflow-hidden pt-0">
               <div
                 aria-hidden="true"
-                className="h-32 bg-gradient-to-br from-primary/25 via-primary/10 to-transparent"
-              />
+                className="flex h-36 items-center justify-center overflow-hidden"
+                style={{ backgroundColor: i === 0 ? "var(--block-a)" : "var(--block-b)" }}
+              >
+                <ProjectMark variant={i} />
+              </div>
               <CardHeader className="gap-1">
                 <span className="font-mono text-xs text-muted-foreground">{project.dates}</span>
                 <CardTitle role="heading" aria-level={3} className="text-base leading-snug">{project.name}</CardTitle>

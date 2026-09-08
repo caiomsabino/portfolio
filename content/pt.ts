@@ -17,6 +17,12 @@ export const pt: SiteContent = {
       "Estudante de Engenharia de Software na UnB. Trabalho com backend em Java, Spring Boot, NestJS e Ruby. Mantenho em produção uma plataforma que uma escola de karatê usa todos os dias.",
     ctaProjects: "Ver projetos",
     ctaResume: "Baixar currículo",
+    trace: {
+      request: "GET /api/alunos",
+      status: "200 OK",
+      caption: "O caminho que eu construo, da requisição ao banco.",
+      steps: ["autenticação", "regras de negócio", "consulta PostgreSQL", "resposta JSON"],
+    },
   },
   about: {
     label: "Sobre",
@@ -157,7 +163,7 @@ export const pt: SiteContent = {
     label: "Contato",
     heading: "Vamos conversar",
     blurb:
-      "Estou em busca de uma vaga de estágio em desenvolvimento de software. Se a minha experiência fizer sentido para o seu time, me chame.",
+      "Aberto a conversas sobre backend, dados e automação, e a bons problemas para resolver.",
     emailLabel: "E-mail",
     githubLabel: "GitHub",
     linkedinLabel: "LinkedIn",
