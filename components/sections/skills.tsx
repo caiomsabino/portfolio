@@ -2,6 +2,7 @@
 
 import { Code2, Database, GitBranch, Layers, Workflow } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import { SpokenLanguages } from "@/components/spoken-languages";
 import { TechSphere } from "@/components/tech-sphere";
 import { Separator } from "@/components/ui/separator";
 import { TECH_ICONS } from "@/content/tech-icons";
@@ -78,11 +79,11 @@ export function Skills() {
 
         <Separator className="my-6" />
 
-        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <div className="flex flex-col gap-3">
           <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
             {skills.languagesLabel}
           </h3>
-          <p className="text-sm text-muted-foreground">{skills.languages}</p>
+          <SpokenLanguages languages={skills.languages} />
         </div>
       </Reveal>
     </section>

@@ -157,7 +157,12 @@ export const en: SiteContent = {
       },
     ],
     languagesLabel: "Spoken languages",
-    languages: "Portuguese (native) · English (fluent) · Spanish (intermediate) · French (basic)",
+    languages: [
+      { name: "Portuguese", level: "native", proficiency: 4, regions: ["BR", "PT"] },
+      { name: "English", level: "fluent", proficiency: 3, regions: ["US", "GB"] },
+      { name: "Spanish", level: "intermediate", proficiency: 2, regions: ["ES"] },
+      { name: "French", level: "basic", proficiency: 1, regions: ["FR"] },
+    ],
   },
   contact: {
     label: "Contact",

@@ -157,7 +157,12 @@ export const pt: SiteContent = {
       },
     ],
     languagesLabel: "Idiomas",
-    languages: "Português nativo · Inglês fluente · Espanhol intermediário · Francês básico",
+    languages: [
+      { name: "Português", level: "nativo", proficiency: 4, regions: ["BR", "PT"] },
+      { name: "Inglês", level: "fluente", proficiency: 3, regions: ["US", "GB"] },
+      { name: "Espanhol", level: "intermediário", proficiency: 2, regions: ["ES"] },
+      { name: "Francês", level: "básico", proficiency: 1, regions: ["FR"] },
+    ],
   },
   contact: {
     label: "Contato",

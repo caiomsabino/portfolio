@@ -21,6 +21,15 @@ export interface SkillGroup {
   items: string[];
 }
 
+export interface SpokenLanguage {
+  name: string;
+  level: string;
+  /** 1 basic, 2 intermediate, 3 fluent, 4 native. Drives the level meter. */
+  proficiency: 1 | 2 | 3 | 4;
+  /** ISO country codes whose flags represent the language. */
+  regions: string[];
+}
+
 export interface SiteContent {
   nav: {
     menuLabel: string;
@@ -63,7 +72,7 @@ export interface SiteContent {
     heading: string;
     groups: SkillGroup[];
     languagesLabel: string;
-    languages: string;
+    languages: SpokenLanguage[];
   };
   contact: {
     label: string;
