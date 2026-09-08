@@ -26,11 +26,10 @@ export const en: SiteContent = {
   },
   about: {
     label: "About",
-    heading: "Backend, data and automation",
+    heading: "Backend, data and people",
     paragraphs: [
-      "I study Software Engineering at the University of Brasília, graduating in December 2027.",
-      "My work centers on the backend: REST APIs in Java and Spring Boot, services in NestJS, business rules in Ruby, and data modeling in PostgreSQL. I cover the critical rules with automated tests and use Docker to keep the environment consistent across the team.",
-      "I also like automating whatever is repetitive. These days I use AI tooling and Google Apps Script to take manual work out of my team's routine.",
+      "I work on the code and close to the people who use it. At V360 I run projects end to end, from gathering requirements with the client through to delivery, and I spend a good part of my time translating what the business needs into something the team can actually build.",
+      "The backend is where I like to be: the rule that has to be right, the query that has to be fast, the number that has to add up at the end of the month. I model data in PostgreSQL, cover the critical rules with automated tests, and use Docker to keep the environment consistent across the team.",
     ],
   },
   experience: {
@@ -43,6 +42,7 @@ export const en: SiteContent = {
         dates: "02/2026 — present",
         location: "Brasília, DF",
         bullets: [
+          "I run projects end to end, from gathering requirements with the client through to delivery, aligning what the business expects with what can realistically be built in the time available.",
           "I develop business rules in Ruby that define client-portal functionality, translating requirements from the business side into application logic.",
           "I write and optimize SQL queries in PostgreSQL for exploratory analysis, surfacing patterns that guide the team's operational decisions.",
           "I investigate incidents by analyzing REST API logs and JSON payloads, isolating root causes of production failures.",

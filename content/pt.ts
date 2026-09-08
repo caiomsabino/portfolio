@@ -26,11 +26,10 @@ export const pt: SiteContent = {
   },
   about: {
     label: "Sobre",
-    heading: "Backend, dados e automação",
+    heading: "Backend, dados e pessoas",
     paragraphs: [
-      "Curso Engenharia de Software na Universidade de Brasília, com conclusão prevista para dezembro de 2027.",
-      "Meu trabalho se concentra no backend: APIs REST em Java e Spring Boot, serviços em NestJS, regras de negócio em Ruby e modelagem de dados em PostgreSQL. Cubro as regras críticas com testes automatizados e uso Docker para padronizar o ambiente do time.",
-      "Também gosto de automatizar o que é repetitivo. Hoje uso IA e Google Apps Script para tirar trabalho manual da rotina do time.",
+      "Trabalho tanto no código quanto perto de quem usa o sistema. Na V360 conduzo projetos de ponta a ponta, do levantamento de requisitos com o cliente até a entrega, e passo boa parte do tempo traduzindo o que a área de negócio precisa em algo que o time consiga construir.",
+      "O backend é onde eu gosto de estar: a regra que precisa estar certa, a query que precisa ser rápida, o número que tem que bater no fim do mês. Modelo dados em PostgreSQL, cubro as regras críticas com testes automatizados e uso Docker para padronizar o ambiente do time.",
     ],
   },
   experience: {
@@ -43,6 +42,7 @@ export const pt: SiteContent = {
         dates: "02/2026 — atual",
         location: "Brasília, DF",
         bullets: [
+          "Conduzo projetos de ponta a ponta, do levantamento de requisitos com o cliente até a entrega, alinhando a expectativa do negócio com o que dá para construir no prazo.",
           "Desenvolvo regras de negócio em Ruby que definem funcionalidades do portal do cliente, traduzindo requisitos das áreas de negócio em lógica de aplicação.",
           "Escrevo e otimizo queries SQL em PostgreSQL para análise exploratória, identificando padrões que orientam decisões operacionais do time.",
           "Investigo incidentes analisando logs de APIs REST e payloads JSON, isolando causas-raiz de falhas em produção.",
