@@ -14,7 +14,7 @@ export const en: SiteContent = {
     name: "Caio Sabino",
     role: "Backend & Automation Developer",
     pitch:
-      "Software Engineering student at UnB. I work on the backend in Java, Spring Boot, NestJS and Ruby. I maintain a platform in production that a karate school uses every day.",
+      "From Acre and based in Brasília, Software Engineering student at UnB and Flamengo supporter. Backend in Java, Spring Boot, NestJS and Ruby. I maintain a platform in production that a karate school uses every day, and what I really enjoy is turning manual work into a system that runs on its own.",
     ctaProjects: "View projects",
     ctaResume: "Download CV",
     trace: {
