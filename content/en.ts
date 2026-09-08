@@ -14,7 +14,7 @@ export const en: SiteContent = {
     name: "Caio Sabino",
     role: "Backend & Automation Developer",
     pitch:
-      "Software Engineering student at UnB looking for a development internship. I work on the backend in Java, Spring Boot, NestJS and Ruby — and I maintain a platform in production that a karate school uses every day.",
+      "Software Engineering student at UnB. I work on the backend in Java, Spring Boot, NestJS and Ruby. I maintain a platform in production that a karate school uses every day.",
     ctaProjects: "View projects",
     ctaResume: "Download CV",
   },
@@ -22,9 +22,9 @@ export const en: SiteContent = {
     label: "About",
     heading: "Backend, data and automation",
     paragraphs: [
-      "I study Software Engineering at the University of Brasília, graduating in December 2027, and I am looking for a software development internship.",
+      "I study Software Engineering at the University of Brasília, graduating in December 2027.",
       "My work centers on the backend: REST APIs in Java and Spring Boot, services in NestJS, business rules in Ruby, and data modeling in PostgreSQL. I cover the critical rules with automated tests and use Docker to keep the environment consistent across the team.",
-      "Beyond the code, I like automating whatever is repetitive — these days with AI tooling and Google Apps Script, taking manual work out of my team's routine.",
+      "I also like automating whatever is repetitive. These days I use AI tooling and Google Apps Script to take manual work out of my team's routine.",
     ],
   },
   experience: {
@@ -63,7 +63,7 @@ export const en: SiteContent = {
           "I supported the centralization of government services under ColaboraGov, applying Service Design methodology to diagnose and structure services shared across public agencies.",
           "I ran AS-IS/TO-BE process mapping to identify bottlenecks and opportunities to improve service delivery to citizens.",
           "I facilitated workshops with public agencies, bringing institutional stakeholders together to align on and co-create solutions.",
-          "I produced scientific research on accessibility in government websites, writing a technical-academic paper and developing critical analysis, literature review and scientific writing applied to the public sector.",
+          "I produced scientific research on accessibility in government websites and wrote a technical-academic paper on it.",
           "I applied agile methodologies and requirements-analysis techniques to visually structure complex problems in an innovation lab.",
         ],
       },

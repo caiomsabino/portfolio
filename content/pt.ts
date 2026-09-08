@@ -14,7 +14,7 @@ export const pt: SiteContent = {
     name: "Caio Sabino",
     role: "Desenvolvedor Backend e Automação",
     pitch:
-      "Estudante de Engenharia de Software na UnB em busca de estágio. Trabalho com backend em Java, Spring Boot, NestJS e Ruby — e mantenho em produção uma plataforma que uma escola de karatê usa todos os dias.",
+      "Estudante de Engenharia de Software na UnB. Trabalho com backend em Java, Spring Boot, NestJS e Ruby. Mantenho em produção uma plataforma que uma escola de karatê usa todos os dias.",
     ctaProjects: "Ver projetos",
     ctaResume: "Baixar currículo",
   },
@@ -22,9 +22,9 @@ export const pt: SiteContent = {
     label: "Sobre",
     heading: "Backend, dados e automação",
     paragraphs: [
-      "Curso Engenharia de Software na Universidade de Brasília, com conclusão prevista para dezembro de 2027, e busco uma vaga de estágio em desenvolvimento de software.",
-      "Meu trabalho se concentra no backend: APIs REST em Java e Spring Boot, serviços em NestJS, regras de negócio em Ruby e modelagem de dados em PostgreSQL. Cubro as regras críticas com testes automatizados e uso Docker para padronizar o ambiente entre a equipe.",
-      "Além do código, gosto de automatizar o que é repetitivo — hoje uso Inteligência Artificial e Google Apps Script para tirar trabalho manual da rotina do time.",
+      "Curso Engenharia de Software na Universidade de Brasília, com conclusão prevista para dezembro de 2027.",
+      "Meu trabalho se concentra no backend: APIs REST em Java e Spring Boot, serviços em NestJS, regras de negócio em Ruby e modelagem de dados em PostgreSQL. Cubro as regras críticas com testes automatizados e uso Docker para padronizar o ambiente do time.",
+      "Também gosto de automatizar o que é repetitivo. Hoje uso IA e Google Apps Script para tirar trabalho manual da rotina do time.",
     ],
   },
   experience: {
@@ -63,7 +63,7 @@ export const pt: SiteContent = {
           "Apoiei a centralização de serviços governamentais no âmbito do ColaboraGov, aplicando metodologia de Design de Serviços para diagnóstico e estruturação de serviços compartilhados entre órgãos públicos.",
           "Conduzi mapeamentos de processos (AS-IS/TO-BE) para identificar gargalos e oportunidades de melhoria na prestação de serviços ao cidadão.",
           "Facilitei workshops com órgãos públicos, mobilizando stakeholders institucionais para alinhamento e co-construção de soluções.",
-          "Produzi pesquisa científica sobre acessibilidade em sites governamentais, com elaboração de artigo técnico-acadêmico, desenvolvendo análise crítica, revisão de literatura e escrita científica aplicada ao contexto do setor público.",
+          "Produzi pesquisa científica sobre acessibilidade em sites governamentais e escrevi um artigo técnico-acadêmico sobre o tema.",
           "Apliquei metodologias ágeis e técnicas de análise de requisitos para estruturar visualmente problemas complexos em ambiente de laboratório de inovação.",
         ],
       },
@@ -85,7 +85,7 @@ export const pt: SiteContent = {
         tagline: "Site público e sistema de gestão, em produção",
         dates: "06/2026 — atual",
         description:
-          "Plataforma de uma escola com 12 turmas ativas, que desenvolvi e mantenho em produção. O painel é usado diariamente pelo cliente para cadastro de alunos e turmas, controle de mensalidades e registro de presença e graduações. Modelei o schema relacional em PostgreSQL sobre Supabase, isolei o painel administrativo das rotas públicas com Supabase Auth e estruturei o SEO técnico do site.",
+          "Plataforma de uma escola com 12 turmas ativas, que desenvolvi e mantenho em produção. O painel é usado diariamente pelo cliente para cadastro de alunos e turmas, controle de mensalidades e registro de presença e graduações. Modelei o schema relacional em PostgreSQL no Supabase, isolei o painel administrativo das rotas públicas com Supabase Auth e estruturei o SEO técnico do site.",
         href: SITE_LINKS.karate,
         linkLabel: "gamakarate.com.br",
         tech: ["Next.js", "PostgreSQL", "Supabase", "Vercel"],
